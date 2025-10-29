@@ -25,7 +25,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
   security-check:
-
+    needs: compile
     runs-on: ubuntu-latest
 
     steps:
